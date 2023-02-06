@@ -37,7 +37,7 @@ namespace Veterinaria.capaEntidad
 
         public void Crear(CECliente cE)
         {
-            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion);
+            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion); //Composicion a causa de la conexion a la bases de datos, depende de la clase cadenaConexion
             mySqlConnection.Open();
 
             string query = "INSERT INTO `mascotas` (`nombreMascota`, `raza`, `animal`, `nombreDuenio`) VALUES ('"+ cE.nombreMascota +"', '"+ cE.raza +"', '"+ cE.animal +"', '" + cE.nombreDuenio + "');";
