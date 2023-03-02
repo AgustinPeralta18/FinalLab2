@@ -34,12 +34,12 @@ namespace Veterinaria
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.labelTituloPanelIzquierdo = new System.Windows.Forms.Label();
-            this.picturePrincipalHija = new System.Windows.Forms.PictureBox();
             this.logoBox = new System.Windows.Forms.PictureBox();
+            this.picturePrincipalHija = new System.Windows.Forms.PictureBox();
             this.panelMenuLateral.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePrincipalHija)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePrincipalHija)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenuLateral
@@ -59,7 +59,7 @@ namespace Veterinaria
             this.btnLista.BackColor = System.Drawing.Color.White;
             this.btnLista.FlatAppearance.BorderSize = 0;
             this.btnLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLista.Location = new System.Drawing.Point(3, 226);
+            this.btnLista.Location = new System.Drawing.Point(3, 223);
             this.btnLista.Name = "btnLista";
             this.btnLista.Size = new System.Drawing.Size(313, 51);
             this.btnLista.TabIndex = 2;
@@ -100,16 +100,6 @@ namespace Veterinaria
             this.labelTituloPanelIzquierdo.TabIndex = 2;
             this.labelTituloPanelIzquierdo.Text = "Veterinaria \"Colita Blanca\"";
             // 
-            // picturePrincipalHija
-            // 
-            this.picturePrincipalHija.Image = global::Veterinaria.Properties.Resources.grupo_de_animales_domésticos_en_el_fondo_blanco_92949807;
-            this.picturePrincipalHija.Location = new System.Drawing.Point(322, 0);
-            this.picturePrincipalHija.Name = "picturePrincipalHija";
-            this.picturePrincipalHija.Size = new System.Drawing.Size(559, 423);
-            this.picturePrincipalHija.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturePrincipalHija.TabIndex = 1;
-            this.picturePrincipalHija.TabStop = false;
-            // 
             // logoBox
             // 
             this.logoBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -120,6 +110,16 @@ namespace Veterinaria
             this.logoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoBox.TabIndex = 1;
             this.logoBox.TabStop = false;
+            // 
+            // picturePrincipalHija
+            // 
+            this.picturePrincipalHija.Image = global::Veterinaria.Properties.Resources.grupo_de_animales_domésticos_en_el_fondo_blanco_92949807;
+            this.picturePrincipalHija.Location = new System.Drawing.Point(322, 0);
+            this.picturePrincipalHija.Name = "picturePrincipalHija";
+            this.picturePrincipalHija.Size = new System.Drawing.Size(559, 423);
+            this.picturePrincipalHija.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePrincipalHija.TabIndex = 1;
+            this.picturePrincipalHija.TabStop = false;
             // 
             // Form1
             // 
@@ -135,8 +135,8 @@ namespace Veterinaria
             this.panelMenuLateral.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePrincipalHija)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePrincipalHija)).EndInit();
             this.ResumeLayout(false);
 
         }

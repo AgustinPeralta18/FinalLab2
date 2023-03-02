@@ -10,6 +10,7 @@ using Veterinaria.capaEntidad;
 
 namespace Veterinaria.capaEntidad
 {
+    //En esta clase se hace la conexion a base de datos, la creacion de funciones y/o metodos para la funcionalidad de la aplicacon. Esta clase se asocia con CNCliente para un fin en comun
     class CDCliente
     {
 
@@ -37,7 +38,7 @@ namespace Veterinaria.capaEntidad
 
         public void Crear(CECliente cE)
         {
-            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion); //Composicion a causa de la conexion a la bases de datos, depende de la clase cadenaConexion
+            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion); 
             mySqlConnection.Open();
 
             string query = "INSERT INTO `mascotas` (`nombreMascota`, `raza`, `animal`, `nombreDuenio`) VALUES ('"+ cE.nombreMascota +"', '"+ cE.raza +"', '"+ cE.animal +"', '" + cE.nombreDuenio + "');";
@@ -49,7 +50,7 @@ namespace Veterinaria.capaEntidad
             MessageBox.Show("Registro creado");
         }
 
-        public DataSet listar()
+        public DataSet Listar()
         {
             MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion);
             mySqlConnection.Open();
@@ -65,6 +66,34 @@ namespace Veterinaria.capaEntidad
             return dataSet;
         }
 
-            
+        public void Editar(CECliente cE)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion); //Composicion a causa de la conexion a la bases de datos, depende de la clase cadenaConexion
+            mySqlConnection.Open();
+
+            string query = "UPDATE `mascotas` SET `nombreMascota`='" + cE.nombreMascota + "', `raza`='" + cE.raza + "', `animal`='" + cE.animal + "', `nombreDuenio`='" + cE.nombreDuenio + "' WHERE  `id`="+ cE.id +";";
+
+            MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+
+            MessageBox.Show("Registro actualiazdo");
+        }
+
+        public void Eliminar(CECliente cE)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(cadenaConexion); //Composicion a causa de la conexion a la bases de datos, depende de la clase cadenaConexion
+            mySqlConnection.Open();
+
+            string query = "DELETE FROM `mascotas` WHERE  `id`="+ cE.id +";";
+
+            MySqlCommand mySqlCommand = new MySqlCommand(query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+
+            MessageBox.Show("Registro eliminado");
+        }
+
+
     }
 }

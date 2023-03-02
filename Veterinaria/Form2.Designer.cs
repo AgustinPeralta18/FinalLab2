@@ -97,14 +97,14 @@ namespace Veterinaria
             // 
             // tbAnimal
             // 
-            this.tbAnimal.Location = new System.Drawing.Point(89, 104);
+            this.tbAnimal.Location = new System.Drawing.Point(95, 104);
             this.tbAnimal.Name = "tbAnimal";
             this.tbAnimal.Size = new System.Drawing.Size(100, 20);
             this.tbAnimal.TabIndex = 5;
             // 
             // tbRaza
             // 
-            this.tbRaza.Location = new System.Drawing.Point(78, 130);
+            this.tbRaza.Location = new System.Drawing.Point(95, 130);
             this.tbRaza.Name = "tbRaza";
             this.tbRaza.Size = new System.Drawing.Size(100, 20);
             this.tbRaza.TabIndex = 6;
@@ -168,21 +168,21 @@ namespace Veterinaria
             // 
             // tbDNI
             // 
-            this.tbDNI.Location = new System.Drawing.Point(70, 237);
+            this.tbDNI.Location = new System.Drawing.Point(152, 238);
             this.tbDNI.Name = "tbDNI";
             this.tbDNI.Size = new System.Drawing.Size(100, 20);
             this.tbDNI.TabIndex = 13;
             // 
             // tbDireccion
             // 
-            this.tbDireccion.Location = new System.Drawing.Point(102, 268);
+            this.tbDireccion.Location = new System.Drawing.Point(152, 268);
             this.tbDireccion.Name = "tbDireccion";
             this.tbDireccion.Size = new System.Drawing.Size(100, 20);
             this.tbDireccion.TabIndex = 14;
             // 
             // tbTelefono
             // 
-            this.tbTelefono.Location = new System.Drawing.Point(102, 298);
+            this.tbTelefono.Location = new System.Drawing.Point(152, 298);
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(100, 20);
             this.tbTelefono.TabIndex = 15;

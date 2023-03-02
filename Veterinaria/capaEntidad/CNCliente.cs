@@ -30,7 +30,8 @@ namespace Veterinaria.capaEntidad
 
             return resultado;
         }
-
+        
+        //Se llaman a los metodos creados en la clase cdCliente, se genera una dependencia y asociacion entre estas dos clases. 
         public void crearCliente(CECliente cE)
         {
             cDCliente.Crear(cE);
@@ -38,7 +39,17 @@ namespace Veterinaria.capaEntidad
 
         public DataSet obtenerDatos()
         {
-            return cDCliente.listar();
+            return cDCliente.Listar();
+        }
+
+        public void Editar(CECliente cE)
+        {
+            cDCliente.Editar(cE);
+        }
+
+        public void Eliminar(CECliente cE)
+        {
+            cDCliente.Eliminar(cE);
         }
     }
 }

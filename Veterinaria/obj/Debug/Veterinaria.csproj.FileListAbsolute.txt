@@ -33,3 +33,4 @@ Z:\Visual Studio 2019\repos\Veterinaria\Veterinaria\bin\Debug\System.Memory.xml
 Z:\Visual Studio 2019\repos\Veterinaria\Veterinaria\bin\Debug\System.Numerics.Vectors.xml
 Z:\Visual Studio 2019\repos\Veterinaria\Veterinaria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 Z:\Visual Studio 2019\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Form3.resources
+Z:\Visual Studio 2019\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Form4.resources

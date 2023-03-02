@@ -49,5 +49,10 @@ namespace Veterinaria
         {
             abrirPanelHijo(new Form3());
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            abrirPanelHijo(new Form4());
+        }
     }
 }
