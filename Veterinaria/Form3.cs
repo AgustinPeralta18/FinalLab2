@@ -65,7 +65,8 @@ namespace Veterinaria
             cNCliente.Editar(cECliente);
             CargarDatos();
         }
-
+        
+        //Evento boton eliminar para que salga un messsagebox con la pregunta si está se
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtId.Value == 0)
